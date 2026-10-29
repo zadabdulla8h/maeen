@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f766e">
+<title>معين — حلقة القرآن</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+<script>
+  // تطبيق المظهر قبل الرسم لتجنب الوميض
+  (function(){var t=JSON.parse(localStorage.getItem('theme')||'{}');var d=document.documentElement;
+  var m=t.mode||'auto';d.dataset.theme=m==='auto'?(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'):m;
+  d.dataset.accent=t.accent||'teal';d.style.fontSize=(t.size||16)+'px';})();
+</script>
+</head>
+<body>
+<div id="root"></div>
+<script src="quran.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
